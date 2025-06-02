@@ -29,20 +29,34 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 
 ## Step-by-step demo
  1. **Luanch the script** in Fiji.
-    A dialog window will appear prompting you to:
+    A dialog window will appear prompting you to(see Fig. 1):
     - **Select file (.czi)** : Browse and choose your raw tile image file.
     - **Reference channel for stitching** : Enter the index of the channel to be used for sititching consistency.
-    - **Mode for Ruuning**:
+    - **Mode for Runing**:
       - `Automatic` : Performs BaSiC correction and  Grid/Collection Stitching in one go.
       - `Manual` : Pause after stitching to allow user inspection before proceeding to the next channel.
+        
+      ![Parameter Dialog](https://github.com/user-attachments/assets/2aca991f-b829-4e1e-aca6-c390072725d6)
+
+      *Fig. 1: Dialog window for selecting input file, reference channel, and run mode.*
+
  2. The script will generate three output folders:
     - `BasicTemp` : restructured raw images for BaSiC.
     - `StitchTemp` : Per-tile images corrected by BaSiC.
     -  `Results` : Final fused images
       These folders are created under a parent directory automatically named after the source file.
  3. When finished, only the final fused images in the Results folder are retained.
+ 4. If  `Manual` mode is selected, a dialog will appear after stitching to allow the user to inspect the fused image (see Fig. 2). You can zoom and pan the image to check the stitching alignment. Options are provided to either proceed to the next channel, re-run the stitching, or cancel the process.
+
+![Manual review dialog](https://github.com/user-attachments/assets/358ba86e-dc64-46fa-96b3-904759ed1106)
+
+*Fig. 2: Manual review window. Users can zoom to inspect stitching results and choose whether to proceed.*
     
-## Figure
+## Example result(before/after)
+## Citation
+1. Peng, T., Thorn, K., Schroeder, T. et al. A BaSiC tool for background and shading correction of optical microscopy images. Nat Commun 8, 14836 (2017). https://doi.org/10.1038/ncomms14836
+2. Hörl, D., Rojas Rusak, F., Preusser, F. et al. BigStitcher: reconstructing high-resolution image datasets of cleared and expanded samples. Nat Methods 16, 870–874 (2019). https://doi.org/10.1038/s41592-019-0501-0
+## License
 
 
 
