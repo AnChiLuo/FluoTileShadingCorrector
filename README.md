@@ -6,7 +6,7 @@ To address this limitation, we incorporated [BaSiC] (https://imagej.net/plugins/
 This tool provides:
 - Automatic reorganization of tile images into BaSiC-compatible format
 - Metadata-based extraction of tile coordinates for stitching
-- Output reconstruction using Grid/Collection Stitching in Fiji
+- Output reconstruction using BigStitcher in Fiji
 
 ## Installation
 This tool is implemented as a Groovy script designed to run in  [Fiji (ImageJ)](https://fiji.sc), with dependencies on the following components:
@@ -15,7 +15,7 @@ This tool is implemented as a Groovy script designed to run in  [Fiji (ImageJ)](
 - [Fiji (ImageJ)](https://fiji.sc) -recommended to use the pre-packaged Fiji distribution
 - Bio-Formats plugin (bundled with Fiji)
 - [BaSiC plugin](https://imagej.net/plugins/basic) (available via Fiji update site)
-- [Grid/Collection Stitching plugin](https://imagej.net/plugins/grid-collection-stitching) (bundled with Fiji)
+- [BigStitcher plugin]((https://imagej.net/plugins/bigstitcher/) 
 
 ### Setup Instructions
 1. Download or clone this repository.
