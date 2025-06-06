@@ -4,11 +4,15 @@ To overcome these challenges, we incorporated [BaSiC](https://imagej.net/plugins
 However, using BaSiC in practice poses two technical challenges:
    1. Input formatting: BaSiC expects a well-structured image stack, requiring users to manually prepare and rearrange the output stack for the downstream stitch process.
    2. Post-correction stitching: Users must manually stitch corrected tiles to reconstruct a seamless mosaic image.
+      
 To streamline this workflow, we present IHC-TileShadingFix, an ImageJ tool that integrates:
-   	Tile-aware BaSiC flat-field correction (no reference image required),
-   	Metadata-based tile positioning extracted directly from OME-XML,
-   	Automatic dataset.xml generation for BigStitcher compatibility,
-   	Seamless tile stitching and fusion, either in batch or interactive mode.
+   -	Tile-aware BaSiC flat-field correction (no reference image required),
+   -	Metadata-based tile positioning extracted directly from OME-XML,
+   -	Automatic dataset.xml generation for BigStitcher compatibility,
+   -	Seamless tile stitching and fusion, either in batch or interactive mode.
+
+With our tool, you can perform flat-field correction and generate a fused mosaic directly from raw multi-tile CZI files—no manual data prep, custom XML editing, or fragmented pipeline required. It greatly streamlines the entire process, making it accessible, reproducible, and ready for batch processing. 
+
    
 
 ## Feature
