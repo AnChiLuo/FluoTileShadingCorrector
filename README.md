@@ -1,6 +1,7 @@
 # FluoTileShadingCorrector
 The grid-like shading artifact is a common problem in whole slide images(WSIs), arising from uneven illumination or sample surface irregularities. Affected by this artifact, WSI displays brightness discontinuities and grid-like patterns, which not only degrade visual quality but also ncomplicates downstream image analysis tasks .  Prospective shading methods have been widely used on camera-based imaging systems, but they require a clean, empty field reference image—which is often impractical for fluorescence-labeled tissue sections—and generally fail on laser‐scanning confocal microscopes because the shading pattern varies dynamically per tile. 
 To overcome these challenges, we incorporated [BaSiC](https://imagej.net/plugins/basic)—a robust retrospective shading method that estimates background variation directly from the data itself, without requiring any reference image. 
+
 However, using BaSiC in practice poses two technical challenges:
    1. Input formatting: BaSiC expects a well-structured image stack, requiring users to manually prepare and rearrange the output stack for the downstream stitch process.
    2. Post-correction stitching: Users must manually stitch corrected tiles to reconstruct a seamless mosaic image.
@@ -12,16 +13,6 @@ To streamline this workflow, we present IHC-TileShadingFix, an ImageJ tool that 
    -	Seamless tile stitching and fusion, either in batch or interactive mode.
 
 With our tool, you can perform flat-field correction and generate a fused mosaic directly from raw multi-tile CZI files—no manual data prep, custom XML editing, or fragmented pipeline required. It greatly streamlines the entire process, making it accessible, reproducible, and ready for batch processing. 
-
-   
-
-## Feature
-This tool provides:
-- Supports multi-tile **Zeiss CZI** image import via Bio-Formats
-- Automatic reorganization of tile images into BaSiC-compatible format
-- Applies **BaSiC flat-field and dark-field correction** tile-wise
-- Automatically creates compatible XML for **BigStitcher**
-- Removes temporary files to keep workspace clean
 
 ## ⚙️ Installation
 This tool is implemented as a Groovy script designed to run in  [Fiji (ImageJ)](https://fiji.sc), with dependencies on the following components:
