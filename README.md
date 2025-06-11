@@ -60,7 +60,7 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 
 ## 🔍 Notes
 
-- 📦 Input must be **unstitched** CZI files with positional metadata.
+- 📦 Input must be **unstitched** CZI or Lif files with positional metadata.
 - ⛔ **Avoid spaces** in filenames and paths.
 - ⚠️ Final stitched intensity values are **not calibrated for quantification** due to brightness normalization.
     
