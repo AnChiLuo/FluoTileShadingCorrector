@@ -6,13 +6,13 @@ However, using BaSiC in practice poses two technical challenges:
    1. Input formatting: BaSiC expects a well-structured image stack, requiring users to manually prepare and rearrange the output stack for the downstream stitch process.
    2. Post-correction stitching: Users must manually stitch corrected tiles to reconstruct a seamless mosaic image.
       
-To streamline this workflow, we present IHC-TileShadingFix, an ImageJ tool that integrates:
+To streamline this workflow, we present FluoTileShadingCorrector, an ImageJ tool that integrates:
    -	Tile-aware BaSiC flat-field correction (no reference image required),
    -	Metadata-based tile positioning extracted directly from OME-XML,
    -	Automatic dataset.xml generation for BigStitcher compatibility,
    -	Seamless tile stitching and fusion, either in batch or interactive mode.
 
-With our tool, you can perform flat-field correction and generate a fused mosaic directly from raw multi-tile CZI files—no manual data prep, custom XML editing, or fragmented pipeline required. It greatly streamlines the entire process, making it accessible, reproducible, and ready for batch processing. 
+With our tool, you can perform flat-field correction and generate a fused mosaic directly from raw CZI or Lif files—no manual data prep, custom XML editing, or fragmented pipeline required. It greatly streamlines the entire process, making it accessible, reproducible, and ready for batch processing. 
 
 ## ⚙️ Installation
 This tool is implemented as a Groovy script designed to run in  [Fiji (ImageJ)](https://fiji.sc), with dependencies on the following components:
@@ -61,6 +61,7 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 ## 🔍 Notes
 
 - 📦 Input must be **unstitched** CZI or Lif files with positional metadata.
+-  👉 The file should contain **a single tile-scan dataset** from **one acquisition** only. Batch processing of multiple files or multiple scenes is not supported.
 - ⛔ **Avoid spaces** in filenames and paths.
 - ⚠️ Final stitched intensity values are **not calibrated for quantification** due to brightness normalization.
     
