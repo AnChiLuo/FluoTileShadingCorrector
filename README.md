@@ -69,7 +69,19 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 1. Peng, T., Thorn, K., Schroeder, T. et al. A BaSiC tool for background and shading correction of optical microscopy images. Nat Commun 8, 14836 (2017). https://doi.org/10.1038/ncomms14836
 2. Hörl, D., Rojas Rusak, F., Preusser, F. et al. BigStitcher: reconstructing high-resolution image datasets of cleared and expanded samples. Nat Methods 16, 870–874 (2019). https://doi.org/10.1038/s41592-019-0501-0
 ## License
-Apache License 2.0
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+### Included/Invoked Dependencies
+
+This tool **invokes but does not bundle or modify** the following third-party ImageJ/Fiji plugins:
+
+- **[BigStitcher](https://imagej.net/plugins/bigstitcher)**  
+  Licensed under the GNU General Public License v3.0 (GPL-3.0)  
+  → Used for tile registration, global optimization, and image fusion.
+
+- **[BaSiC](https://imagej.net/plugins/basic)**  
+  Licensed under the GNU General Public License v3.0 (GPL-3.0)  
+  → Used for flat-field and dark-field correction on image tiles.
+
 
 
 
