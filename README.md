@@ -36,7 +36,7 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 ## Step-by-step demo
  1. **Luanch the script** in Fiji.
     A dialog window will appear prompting you to(see Fig. 1):
-    - **Select file (.czi)** : Browse and choose your raw tile image file.
+    - **Select file (.czi or .lif)** : Browse and choose your raw tile image file.
     - **Reference channel for stitching** : Enter the index of the channel to be used for sititching consistency.
     - **Mode for Runing**:
       - `Automatic` : Performs BaSiC correction and  Grid/Collection Stitching in one go.
