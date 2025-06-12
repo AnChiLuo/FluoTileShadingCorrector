@@ -70,6 +70,9 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
 - ⚠️ Final stitched intensity values are **not calibrated for quantification** due to brightness normalization.
     
 ## Example result(before/after)
+![Result](https://github.com/user-attachments/assets/8946135b-9c9c-4517-b900-ea1494a73adb)
+
+
 ## Citation
 1. Peng, T., Thorn, K., Schroeder, T. et al. A BaSiC tool for background and shading correction of optical microscopy images. Nat Commun 8, 14836 (2017). https://doi.org/10.1038/ncomms14836
 2. Hörl, D., Rojas Rusak, F., Preusser, F. et al. BigStitcher: reconstructing high-resolution image datasets of cleared and expanded samples. Nat Methods 16, 870–874 (2019). https://doi.org/10.1038/s41592-019-0501-0
