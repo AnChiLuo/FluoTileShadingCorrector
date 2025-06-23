@@ -52,7 +52,7 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
     -  `Results` : Final fused images
       These folders are created under a parent directory automatically named after the source file.
  3. When finished, only the final fused images in the Results folder are retained.
- 4. If  `Manual` mode is selected, a dialog will appear after stitching to allow the user to inspect the fused image (see Fig. 2). You can zoom and pan the image to check the stitching alignment. Options are provided to either proceed to the next channel,rerun Stitching for the same channel, or cancel the process.
+ 4. If  `Manual` mode is selected, a dialog will appear after stitching to allow the user to inspect the fused image (see Fig. 2). You can zoom and pan the image to check the stitching alignment. Options are provided to either proceed to the next channel, reselecting reference channel for Stitching, or cancel the process.
 
 
 ![Dialog_Manual](https://github.com/user-attachments/assets/f3947631-ab5b-4f59-88eb-dcb70a2c50ac)
