@@ -71,6 +71,7 @@ Once launchched, a dialog will prompt for a `.czi` file and guide you through th
     
 ## Example result(before/after)
 ![Result](https://github.com/user-attachments/assets/8946135b-9c9c-4517-b900-ea1494a73adb)
+*Demo image kindly provided by Dr. Lih-Chu Chiou's lab (used with permission).*
 
 
 ## Citation
