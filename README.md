@@ -1,6 +1,4 @@
 # FluoTileShadingCorrector      <br>[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15736205.svg)](https://doi.org/10.5281/zenodo.15736205)
-
-AnChiLuo. *FluoTileShadingCorrector* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.15736205
 The grid-like shading artifact is a common problem in whole slide images(WSIs), arising from uneven illumination or sample surface irregularities. Affected by this artifact, WSI displays brightness discontinuities and grid-like patterns, which not only degrade visual quality but also complicates downstream image analysis tasks .  Prospective shading methods have been widely used on camera-based imaging systems, but they require a clean, empty field reference image—which is often impractical for fluorescence-labeled tissue sections—and generally fail on laser‐scanning confocal microscopes because the shading pattern varies dynamically per tile. 
 To overcome these challenges, we incorporated [BaSiC](https://imagej.net/plugins/basic)—a robust retrospective shading method that estimates background variation directly from the data itself, without requiring any reference image. 
 
